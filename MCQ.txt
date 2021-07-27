@@ -1,0 +1,182 @@
+Q1) what is output of following code-
+printf("%d",5%-2)
+(A) -1
+(B) -2
+(C) 1
+(D) 2
+
+Right Answer: (C) because in case of modulus operation sign of numerator is domainting means sign of denominator is always
+discarded.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q2) what is output of following code-
+printf("%d",-5.0%2.0);
+(A) -1
+(B) -2
+(C) 1
+(D) 2
+(E) None of These
+
+Right Answer: (E) because the modulus operator is not applicable for float data type.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q3) what is output of following code-
+double d = 2*3/4*1.0/2.0*4;
+printf("%lf",d);
+(A) 3.0
+(B) 2.0
+(C) 5.0
+(D) 0.0
+
+Right Answer: (B)
+Explanation: priority of * and / is same,when proirity is same.. associativity is L->R for * and /
+double d = 2*3/4*1.0/2.0*4
+double d = 6/4*1.0/2.0*4
+double d = 1*1.0/2.0*4
+double d = 1.0/2.0*4
+double d = 0.5*4
+double d = 2.0
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q4) what is output of following code-
+printf("%f %g %e",25.268, 64.150,85.256);
+Right Answer: 25.268000 64.15 8.5256E+01
+Explanaion:
+%f: used to print in fractional form such that the %f print up to 6 decimal places
+%g: used to print in fractional form such that it does not print unnecessary zeros
+%e: used to print the fractional number in exeponential forms
+85.256 => 8.5256 x 10^1 => 8.5256E+01
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q5) what is output of following code-
+printf("%d %d", 078, 0XAB);
+Error: because 8 is not a valid digit for octal number system. In octal system the numbers are from 0 to 7
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q6) What is output of following code-
+printf("%d",sizeof(1.5) - sizeof(15));
+(A) 0
+(B) 2
+(C) 4
+(D) None of these
+
+Right Answer: (C)
+Explaination: By default, all fractional number belongs to double data type. sizeof(1.5) is 8, sizeof(15) is 4
+double: 8 bytes
+float: 4 bytes
+long: 8 bytes
+int: 4 bytes
+char: 1 byte
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q7) What is the output of following
+printf("%d",sizeof(1.5f) - sizeof(15L));
+answer is -4  (my answer is 0)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q8) What is output of following code-
+char ch = 256;
+printf("%d", ch);
+
+2 | 256		0
+2 | 128		0
+2 | 64		0
+2 | 32		0
+2 | 16		0
+2 | 8		0
+2 | 4		0
+2 | 2		0
+2 | 1		1
+	X
+
+Binary(1 0000 0000) is same as 256 in integer. This presentation is of 9 bits but the size of char is 1 byte/8 bits so store first
+8 bits here
+
+char ch = Binary(0000 0000)
+output: 0
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q9) What is output of following code-
+printf("%d", 10 > 5 > 1);
+(A) 1
+(B) 0
+(C) false
+(D) true
+
+Right Answer: 0
+Explaination
+> > same priority, associativity L->R
+(10 > 5) > 1 => 1 > 1 => 0
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q10) What is output of following code-
+int a = 9;
+if(a >= 10)
+	printf("All is well");
+	printf("God is great");
+	
+Right Answer: God is great
+Explaination: If we don't specify the body of if,else,while,for,do using {} then te body is autmatically assumed up to one
+statement
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q11) What is output of following code-
+int a = 10;
+if(a >= 10)
+	print("*");
+	print("#");
+else
+	print("+");
+	print("/");
+	
+(A) *#
+(B) +/
+(C) */
+(D) None of these
+
+Answer is (D) because there is an error of misplaced else. else statement should always be placed immediately after closing of 
+if statement.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q12) What is the output of:
+printf("%d", 10 > 5 && 5 > 1);
+Answer is 1
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q13) What is output of following statement-
+int i = 10;
+int j;
+i == 10?j = 10:j = 20;
+printf("%d",j);
+
+.C	(i == 10?j = 10:j) = 20;	//Error
+.CPP:	i == 10?(j = 10):(j = 20);	//j = 10 will be executed
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q14) What is the output of:
+int i = 0, j = 2, k = 3;
+int d = ++i || j++ && k--;
+printf("%d %d %d %d",i, j, k, d);
+
+Right Answer: 1 2 3 1
+Explaination:
+1. In case of logical operators you have to always evaluate from L->R
+2. The || operation is called short circuit or operation because if LHS condition is true then it never checks for RHS condition
+so here j++ && k-- will not be executed because ++i already result in 1.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q15) 

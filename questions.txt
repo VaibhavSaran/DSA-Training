@@ -1,0 +1,31 @@
+Question:
+WAP to find total bill of a telecom consumer based on following criterial
+Total call charges   Total Messages charges
+up to 50   50 paisa  up to 100      Nil
+up to 150  75 paisa  up to 200      20 paisa
+up to 300  85 paisa  up to 350      40 paisa
+>= 300     95 paisa     >= 350      60 paisa
+
+Sample Input
+Enter mumber of calls: 75
+Enter number of messages: 70
+
+Sample output
+Total bill amount is: 43.75/-
+
+Explaination:
+First 50 calls it is 50 paisa per calls so total call charges are 25/-
+Next 25 calls it is 75 paisa per calls so total call charges are 18.75/-
+Total call charges are : 43.75/-
+
+First 100 messages are free so it will be no charges
+
+Sample Input
+Enter mumber of calls: 375
+Enter number of messages: 250
+
+Sample output
+Total bill amount is: 338.75/-
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
