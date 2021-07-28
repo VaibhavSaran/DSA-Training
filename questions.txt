@@ -1,5 +1,4 @@
-Question:
-WAP to find total bill of a telecom consumer based on following criterial
+Question 1: WAP to find total bill of a telecom consumer based on following criterial
 Total call charges   Total Messages charges
 up to 50   50 paisa  up to 100      Nil
 up to 150  75 paisa  up to 200      20 paisa
@@ -29,3 +28,110 @@ Total bill amount is: 338.75/-
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
+Question 2: Say we have an array of N x N order	we have to find the difference of sum of elements of primary and secondary
+diagonals
+Sample Input
+{
+	{1, 2, 3}
+	{5, 6, 7}
+	{4, 5, 8}
+}
+
+Sample output:
+The difference of addition of elements the primary and the secondary diagonal is 1
+
+Explaination:
+Elements of primary dignols are 1, 6, 8 so their addition is 1 + 6 + 8 => 15
+Elements of secondary dignols are 3, 6, 4 so their addition is 3 + 6 + 4 => 13
+for primary dignols; indexs are: 0,0, 1,1, 2,2 (row == col)
+for secondary dignols; indexs are: 0,2, 1,1, 2,0 (row + col == N - 1)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Question 3: WAP to find the elements that is nearest to the average, if more than one element is nearest then both answers will be
+okay
+Sample Input
+Enter number of elements of array: 5
+Enter 5 element: 10 20 25 30 35
+
+Sample output
+The element that is nearest to the average is 25
+
+Explaination: The average of elements of the array is 24 (Addition is 120, total elements are 5)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Question 4: WAP to implement a customer care system such that it will provide 5 choices-
+	1. For balance enquiry
+	2. For VAS
+	3. For MNP
+	4. For pre to post migration
+	5. To talk to CCE
+	
+	A user will be provided maximum 3 chances in case of wrong input
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Question 5: WAP to input an amount from user and print the current denomination from highest value to the lowest value
+	
+	Sample Input
+	Please enter amount: 8888
+	
+	Sample output:
+	2000 x 4 = 8000
+	500  x 1 =  500
+	200  x 1 =  200
+	100  x 1 =  100
+	50   x 1 =   50
+	20   x 1 =   20
+	10   x 1 =   10
+	5    x 1 =   5
+	2    x 1 =   2
+	1    x 1 =   1
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Question 6: 
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------

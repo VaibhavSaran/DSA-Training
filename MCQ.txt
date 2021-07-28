@@ -179,4 +179,207 @@ so here j++ && k-- will not be executed because ++i already result in 1.
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
-Q15) 
+Q15) Write output-
+int i = 10;
+switch(i){
+	case 10:
+		printf("Hello");
+	case 11:
+		printf("Hi");
+		break;
+	default:
+		printf("sayonara");
+}
+
+Ans: Hello Hi
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q16) Write output-
+int i = 1;
+int a = i;
+switch(i){
+	case 2:
+		printf("*");
+		break;
+	case a:
+		printf("+");
+		break;
+	default:
+		printf("$")
+}
+
+Ans: Error
+Variable not applicable to switch case
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q17) Write output-
+int i = 10;
+switch(i){
+	case 10:
+		printf("A");
+		break;
+	default:
+		printf("C");
+		break;
+	case 5*2:
+		printf("B");
+}
+
+Right Answer: Error, duplicate cases are not allowed
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q18) Write output:
+int i = 10;
+while(i >= 0){
+	printf("%d ",i);
+	i/=2;		//i = i/2;
+}
+ 
+Answer: 10 5 2 1 0
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q19) Write Output
+for(int i = 1; i <= 20; i*=2){
+	printf("%d ",i);
+}
+Ans: 1 2 4 8 16
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q20) Write output:
+for(;;);{
+	printf("All fin in programming");
+}
+(A) All fin in programming
+(B) All fin in programming ... infinite times
+(C) No output
+(D) COmpile time error
+Ans: C
+Explanation: 1. In for loop, It is not necessary to specify the condition; if no condition them assume it is true.
+2. The body of if, else, while, for and do is limited to one statement only if it is not specified explicitly so the above code is
+the same as-
+for(;;){
+		;
+}//this loop will never end because the condition will never be false
+{//this is sequential statement
+	printf("All fin in programming");
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q21) Write Output:
+while(){
+	printf("All fin in programming");
+}
+Ans: Error
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q22) Write Output:
+while(0){
+	printf("All fun in C");
+}
+Right, Answer No output, because 0 is considered as equivalent to false so the loop will not execute even for a single time.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q23) Write output-
+for(int i = 10, j = 1; i >= j; i--, j++){
+	printf("%d %d", i, j);
+}
+Explanation:
+Multiple initiaization and Multiple Updation is also possible.
+Execution
+i = 10, j = 1
+i = 9, j = 2
+i = 8, j = 3
+i = 7, j = 4
+i = 6, j = 5
+i = 5, j = 6 (F)
+Output:
+10 1 9 2 8 3 7 4 6 5
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q24) Write Output-
+int i = 10;
+while(i >= 5){
+	printf("%d ",i);
+	if(i%2 == 1)
+		break;
+}
+printf("\nBye Bye");
+Ans: 10 infinite times
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q25) Write Output-
+int i = 10;
+while(i >= 5){
+	printf("%d ",i);
+	if(i%2 == 1)
+		break;
+	i--;
+}
+printf("\nBye Bye");
+Ans: 10 9 Bye Bye
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q26) Write Output: 
+for(int i = 0; i < 2; i++){
+	for(int j = 0; j <= 2; j++){
+		if(i == j){
+			break;
+		}
+		printf("%d ", j);
+	}
+}
+Right Answer:
+Explanation:
+i = 0
+	j = 0 [breaked]
+i = 1
+	j = 0,1	[breaked]
+i = 2 [f]
+
+Output:
+0
+Explanation: The break statement is capable of break one loop only. If you have used the break statement in the nested loop, it
+will break the nested loop only. It will never break the outer loop.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q27) Write Output: 
+int i = 10;
+do{
+	printf("%d ", i);
+	i-=2;
+}while(i >= 0);
+
+Explaination
+i = 10,8,6,4,2,0,-2(F)
+
+Output:
+10 8 6 4 2 0
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Q28) Write Output:
+for(int i = 1; i <= 20; i++){
+	if(i%2 == 0)
+		continue;
+	printf("%d ",i);
+}
+Ans: 1 3 5...19
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------
