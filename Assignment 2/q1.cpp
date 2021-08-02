@@ -15,22 +15,20 @@ using namespace std;
 int main()
 {
     int n;
-    cout << "Enter the length of array\n";
+    cout << "Enter the length of array: ";
     cin >> n;
-    cout << "Entered length is \t" << n << "\n";
     int arr[n];
-    cout << "Enter the elements of the array";
+    cout << "Enter the elements of the array:\n";
     for (int i = 0; i < n; i++)
         cin >> arr[i];
 
-    int maxNum = INT32_MIN;
+    int maxNum = 0;
     for (int i = 0; i < n; i++)
     {
         if (arr[i] > maxNum)
         {
-            16, 11, 10, 8, 4
+            maxNum = arr[i];
         }
-        maxNum = arr[i];
     }
     cout << "Max number from array is:\t" << maxNum << "\n";
 
@@ -41,7 +39,7 @@ int main()
         blockUsed += i;
         i++;
     }
-    cout << "Max no of stairs from the given array is:\t" << noOfStair << "\n";
+    cout << "Max no of stairs from the given array is: " << noOfStair;
 
     return 0;
 }
