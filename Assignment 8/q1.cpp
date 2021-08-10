@@ -7,7 +7,6 @@ also that points to the last node of the linked list. Perform following operatio
 5. Display elements of the list
 6. Search element in the list
 7. Sort the elements of the list.*/
-
 # include <bits\stdc++.h>
 using namespace std;
 struct node
