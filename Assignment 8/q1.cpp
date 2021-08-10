@@ -166,37 +166,31 @@ void sortNode()// bubble sort
 {
 	if(head==NULL)
 		cout<<"No Linked List to sort!!";
-	else if (head->next=NULL)
-		cout<<"Linked List is already sorted! there is only one element DUH!!";
 	else
 	{
-		struct node* flag,*temp,*small;
-		flag = head;
-		int jar;
-		while(flag!=NULL)
-		{
-			temp = flag;
-			small = temp;
-			// finding values
-			while(temp!=NULL)
-			{
-				if(temp->val<=small->val)
-					small = temp;
-				temp = temp->next;
-			}
-			// swapping values
-			jar = small->val;
-			small->val = flag->val;
-			flag->val = jar;
-			//incrementing flag
-			flag = flag->next;
-		}
-		flag = NULL;
-		temp = NULL;
-		small = NULL;
-		free(flag);
-		free(temp);
-		free(small);
+		int swapped, i;
+    	struct node *ptr1;
+    	struct node *lptr = NULL;
+    	struct node *start = head;
+    	/* Checking for empty list */
+    	if (start == NULL)
+        	return;  
+    	do
+    	{
+        	swapped = 0;
+        	ptr1 = start;
+  
+ 	        while (ptr1->next != lptr)
+    	    {
+        	    if (ptr1->val > ptr1->next->val)
+            	{
+                	swap(ptr1->val, ptr1->next->val);
+                	swapped = 1;
+            	}
+            	ptr1 = ptr1->next;
+        	}
+        	lptr = ptr1;
+    	}while (swapped);
 	}
 }
 int main()
