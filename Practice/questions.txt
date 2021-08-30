@@ -54,8 +54,7 @@ Sample Input
 Enter number of elements of array: 5
 Enter 5 element: 10 20 25 30 35
 
-Sample output
-The element that is nearest to the average is 25
+Sample output: The element that is nearest to the average is 25
 
 Explaination: The average of elements of the array is 24 (Addition is 120, total elements are 5)
 
