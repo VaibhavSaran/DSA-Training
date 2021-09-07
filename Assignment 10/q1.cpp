@@ -10,10 +10,7 @@ For K = 3, current maximum is 4 (Sum = 9 + 4 = 13 and arr[] = {2, 3, 3, 3})
 
 Hence, the result is 13
 */
-/* My Approach 
-1) Sort the array in ascending order
-2) Use the last K elements as needed.
-*/
+// Average complexity is O(k*n) and worst case is O(n^2)
 #include<iostream>
 using namespace std;
 int main()
