@@ -68,10 +68,14 @@ int evaluatePostfix(char* exp)
             int val2 = pop(stack);     
             switch (exp[i])
             {
-	            case '+': push(stack, val2 + val1); break;
-	            case '-': push(stack, val2 - val1); break;
-	            case '*': push(stack, val2 * val1); break;
-	            case '/': push(stack, val2/val1); break;
+	            case '+': push(stack, val2 + val1); 
+                          break;
+	            case '-': push(stack, val2 - val1); 
+                          break;
+	            case '*': push(stack, val2 * val1); 
+                          break;
+	            case '/': push(stack, val2 / val1);
+                          break;
             }
         }
     }
